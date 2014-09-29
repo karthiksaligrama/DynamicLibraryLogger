@@ -2,7 +2,7 @@
 //  main.m
 //  LoggerExample
 //
-//  Created on 8/12/14.
+//  Created by Karthik Saligrama on 8/12/14.
 //
 //
 
