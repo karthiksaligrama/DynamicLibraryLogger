@@ -34,22 +34,7 @@
     self.navigationController = [[UINavigationController alloc]initWithRootViewController:viewController];
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
-    
-    NSSetUncaughtExceptionHandler(&uncaughtException);
-    struct sigaction signalaction;
-    memset(&signalaction, 0, sizeof(signalaction));
-    signalaction.sa_handler =&signalHandler;
-    sigaction(SIGABRT, &signalaction, NULL);
     return YES;
-}
-
-void signalHandler(int s){
-    NSLog(@"signal handler %d" , s);
-}
-
-void uncaughtException(NSException *exception){
-    NSArray *stack = [exception callStackReturnAddresses];
-    NSLog(@"Stack trace: %@", stack);
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
