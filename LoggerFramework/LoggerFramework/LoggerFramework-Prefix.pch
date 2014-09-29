@@ -1,0 +1,16 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
+
+
+#define LOADED @"Loaded"
+#define UNLOADED @"Unloaded"
+#define LOG_FILE_NAME @"/report.log"
+
+#define LOG_MARKER @"===============================New Launch @ %@================================"
