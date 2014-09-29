@@ -11,5 +11,6 @@
 #define LoggerFramework_Logger_h
 
 #import <LoggerFramework/CRLogger.h>
+#import <LoggerFramework/CRCrashReporter.h>
 
 #endif

@@ -18,7 +18,6 @@ NSOperationQueue *queue;
 NSFileHandle *logFileHandle;
 NSString *filePath;
 
-
 -(id)init{
     return [CRLogger sharedInstance];
 }
