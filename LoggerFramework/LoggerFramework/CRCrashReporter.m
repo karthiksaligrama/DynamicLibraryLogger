@@ -11,10 +11,6 @@
 
 @implementation CRCrashReporter
 
-NSString *const CRSignalKey = @"CRSignalKey";
-NSString *const CRAddressKey = @"CRAddressKey";
-NSString *const CRExceptionNameKey = @"CRExceptionNameKey";
-
 static CRCrashReporter *sharedObject;
 
 -(id)init{

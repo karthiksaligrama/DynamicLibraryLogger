@@ -24,6 +24,7 @@
 
 @protocol CRCrashreporterDelegate <NSObject>
 
+@optional
 -(void)saveApplicationState;
 
 @end

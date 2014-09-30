@@ -14,3 +14,7 @@
 #define LOG_FILE_NAME @"/report.log"
 
 #define LOG_MARKER @"===============================New Launch @ %@================================"
+
+#define CRSignalKey @"CRSignalKey"
+#define CRAddressKey @"CRAddressKey"
+#define CRExceptionNameKey @"CRExceptionNameKey"
