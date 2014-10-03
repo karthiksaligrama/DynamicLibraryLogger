@@ -13,3 +13,7 @@ Example project contains the way to log the loading and unloading of dynamic ima
 
 1. Add more features
 2. Add crash logging support, reporting crashes on remote server etc.
+
+## Disclaimer
+
+Crash Logger is still work in progress. Please use caution while using the code.
