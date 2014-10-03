@@ -1,0 +1,10 @@
+/* 
+  AlertConstants.strings
+  LoggerFramework
+
+  Created by Karthik Saligrama on 10/3/14.
+
+*/
+
+"CR_ALERT_MESSAGE"="Logger has Crashed! Help us by sending a report, so that we can expedite a fix for you"
+"CR_ALERT_TITLE"="Logger Example Crashed"

@@ -7,7 +7,13 @@
 //
 
 #import "CRCrashReporter.h"
+#import "CRUtilities.h"
+#import <UIKit/UIKit.h>
 #import <execinfo.h>
+@interface CRCrashReporter()<UIAlertViewDelegate>
+
+@end
+
 
 @implementation CRCrashReporter
 
@@ -45,7 +51,23 @@ static CRCrashReporter *sharedObject;
     signal(SIGPIPE, SignalHandler);
     
     //check for pending crash reports, if present show them alert dialog to send the data to server
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    BOOL isPreviousLaunchCrash = [userDefaults boolForKey:CRApplicationCrashed];
     
+    if(isPreviousLaunchCrash){
+        NSDictionary *userInfo = [userDefaults objectForKey:CRApplicationCrashLog];
+        if(userInfo){
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:[CRUtilities stringForDefaultLocale:@"CR_ALERT_TITLE"]
+                                                         message:[CRUtilities stringForDefaultLocale:@"CR_ALERT_MESSAGE"]
+                                                         delegate:self
+                                                         cancelButtonTitle:@"Not this time"
+                                                         otherButtonTitles:@"Yes", nil];
+            [alertView show];
+            
+        }
+    }
+    [userDefaults setBool:NO forKey:CRApplicationCrashed];
+    [userDefaults synchronize];
 }
 
 //function to get the backtrace when a function has crashed.
@@ -75,7 +97,17 @@ static CRCrashReporter *sharedObject;
     }
     
     //todo: do your thing where log it in file etc etc.,
-    
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setBool:YES forKey:CRApplicationCrashed];
+    [userDefaults setObject:exception.userInfo forKey:CRApplicationCrashLog];
+    [userDefaults synchronize];
+}
+
+#pragma mark - alert view delegate methods
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    if(buttonIndex != [alertView cancelButtonIndex]){
+        //TODO: work with the remote report sender class to send the report
+    }
 }
 
 

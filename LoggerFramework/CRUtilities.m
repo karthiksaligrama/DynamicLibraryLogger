@@ -14,4 +14,9 @@
     return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"];
 }
 
++(NSString *)stringForDefaultLocale:(NSString *)key{
+    return NSLocalizedString(key, @nil);
+}
+
+
 @end

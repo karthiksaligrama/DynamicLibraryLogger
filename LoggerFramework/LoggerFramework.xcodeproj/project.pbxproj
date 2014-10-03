@@ -71,9 +71,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4B02D5E319DF270800E2154E /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = SOURCE_ROOT; };
 		4B02D5E419DF27E300E2154E /* CRUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUtilities.h; sourceTree = SOURCE_ROOT; };
 		4B02D5E519DF27E300E2154E /* CRUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRUtilities.m; sourceTree = SOURCE_ROOT; };
+		4B02D5EA19DF2ACD00E2154E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AlertConstants.strings; sourceTree = "<group>"; };
 		4BA4BA9219D9EDAC0081D29A /* CRCrashReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRCrashReporter.h; path = LoggerFramework/CRCrashReporter.h; sourceTree = SOURCE_ROOT; };
 		4BA4BA9319D9EDAC0081D29A /* CRCrashReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRCrashReporter.m; path = LoggerFramework/CRCrashReporter.m; sourceTree = SOURCE_ROOT; };
 		4BA4BA9619DA06B00081D29A /* CRRemoteReportSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRRemoteReportSender.h; sourceTree = SOURCE_ROOT; };
@@ -165,8 +165,8 @@
 		4BCD81C7199BE8CA00CC3F35 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4B02D5EB19DF2ACD00E2154E /* AlertConstants.strings */,
 				4BCD8206199BEC6900CC3F35 /* LoggerFramework-Prefix.pch */,
-				4B02D5E319DF270800E2154E /* Settings.bundle */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -348,6 +348,17 @@
 			targetProxy = 4BCD822B199C0CF600CC3F35 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4B02D5EB19DF2ACD00E2154E /* AlertConstants.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B02D5EA19DF2ACD00E2154E /* en */,
+			);
+			name = AlertConstants.strings;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4BCD81E2199BE8CA00CC3F35 /* Debug */ = {

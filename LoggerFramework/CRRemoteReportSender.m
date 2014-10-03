@@ -17,6 +17,10 @@
 
 +(void)sendReportWithUserInfo:(NSDictionary *)userInfo{
     //Todo: setup settings.bundle
+    //add suppport for sending the data through multiple channels - mails, http, etc
+    
+    //phase 1 lets just send an email of the crash report.
+    
 }
 
 +(NSString *) extractTextInformation{

@@ -12,5 +12,6 @@
 
 +(NSString *)applicationName;
 
++(NSString *)stringForDefaultLocale:(NSString *)key;
 
 @end

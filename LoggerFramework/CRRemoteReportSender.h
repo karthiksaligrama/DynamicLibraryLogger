@@ -20,12 +20,15 @@
 
 @end
 
-
 @protocol CRRemoteReportSenderDelegate <NSObject>
 
 @optional
--(void)reportIsBeingSent;
 
--(void)reportIsSent;
+//can be used to override some http settings like custom headers etc.
+-(void)reportWillSendUsingHttp:(NSMutableURLRequest *)request;
+
+-(void)reportWillSend;
+
+-(void)reportDidSend;
 
 @end
