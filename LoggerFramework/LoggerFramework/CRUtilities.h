@@ -14,4 +14,6 @@
 
 +(NSString *)stringForDefaultLocale:(NSString *)key;
 
++(void)registerDefaultsFromSettingsBundle;
+
 @end

@@ -10,10 +10,10 @@
 #import "CRUtilities.h"
 #import <UIKit/UIKit.h>
 #import <execinfo.h>
+
 @interface CRCrashReporter()<UIAlertViewDelegate>
 
 @end
-
 
 @implementation CRCrashReporter
 
@@ -26,7 +26,7 @@ static CRCrashReporter *sharedObject;
 -(id)initPrivate{
     self = [super init];
     if(self){
-        
+        [CRUtilities registerDefaultsFromSettingsBundle];
     }
     return self;
 }
@@ -42,6 +42,12 @@ static CRCrashReporter *sharedObject;
 }
 
 -(void)registerCrashReporter{
+    NSUserDefaults *userDefaults= [NSUserDefaults standardUserDefaults];
+    BOOL enableCrashReporter = [userDefaults boolForKey:@"CRASH_ENABLED"];
+    if(!enableCrashReporter){
+        NSLog(@"Warning!!! Crash reporter is not enabled. Application will continue to crash");
+        return;
+    }
     NSSetUncaughtExceptionHandler(&UncaughtExceptionHandler);
     signal(SIGABRT, SignalHandler);
     signal(SIGILL, SignalHandler);
@@ -51,7 +57,6 @@ static CRCrashReporter *sharedObject;
     signal(SIGPIPE, SignalHandler);
     
     //check for pending crash reports, if present show them alert dialog to send the data to server
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     BOOL isPreviousLaunchCrash = [userDefaults boolForKey:CRApplicationCrashed];
     
     if(isPreviousLaunchCrash){
@@ -109,7 +114,6 @@ static CRCrashReporter *sharedObject;
         //TODO: work with the remote report sender class to send the report
     }
 }
-
 
 #pragma mark - C Methods
 void UncaughtExceptionHandler(NSException *exception) {

@@ -9,6 +9,7 @@
 #import "CRLogger.h"
 #import <mach-o/dyld.h>
 #import <dlfcn.h>
+#import "CRUtilities.h"
 
 @implementation CRLogger
 
@@ -27,6 +28,7 @@ NSString *filePath;
     if(self){
         queue = [[NSOperationQueue alloc]init];
         queue.maxConcurrentOperationCount=1;
+        [CRUtilities registerDefaultsFromSettingsBundle];
     }
     return self;
 }
@@ -55,8 +57,12 @@ NSString *filePath;
 //the dynamic libraries when the application
 //is loaded or unloaded
 -(void)registerLogger{
-    _dyld_register_func_for_add_image(&imageAdded);
-    _dyld_register_func_for_remove_image(&imageRemoved);
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    BOOL debugEnabled = [userDefaults boolForKey:@"DEBUG_ENABLED"];
+    if(debugEnabled){
+        _dyld_register_func_for_add_image(&imageAdded);
+        _dyld_register_func_for_remove_image(&imageRemoved);
+    }
 }
 
 #pragma mark - callbacks for image loading and unloading (dyld)
