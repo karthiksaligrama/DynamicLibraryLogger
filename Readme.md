@@ -16,4 +16,4 @@ Example project contains the way to log the loading and unloading of dynamic ima
 
 ## Disclaimer
 
-Crash Logger is still work in progress. Please use caution while using the code.
+Crash Logger is still work in progress. Please excercise caution while using the code.
