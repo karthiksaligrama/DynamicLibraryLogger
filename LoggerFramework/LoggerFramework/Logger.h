@@ -12,5 +12,7 @@
 
 #import <LoggerFramework/CRLogger.h>
 #import <LoggerFramework/CRCrashReporter.h>
+#import <LoggerFramework/CRUtilities.h>
+#import <LoggerFramework/CRRemoteReportSender.h>
 
 #endif
