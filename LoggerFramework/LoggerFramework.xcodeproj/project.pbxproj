@@ -118,6 +118,7 @@
 		4B02D5ED19DF2FEE00E2154E /* Locale */ = {
 			isa = PBXGroup;
 			children = (
+				4B02D5EC19DF2FE600E2154E /* en.lproj */,
 			);
 			name = Locale;
 			sourceTree = "<group>";
@@ -173,7 +174,6 @@
 			isa = PBXGroup;
 			children = (
 				4B02D5ED19DF2FEE00E2154E /* Locale */,
-				4B02D5EC19DF2FE600E2154E /* en.lproj */,
 				4BCD8206199BEC6900CC3F35 /* LoggerFramework-Prefix.pch */,
 			);
 			name = "Supporting Files";
