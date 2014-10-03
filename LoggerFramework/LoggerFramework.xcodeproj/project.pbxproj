@@ -73,7 +73,7 @@
 /* Begin PBXFileReference section */
 		4B02D5E419DF27E300E2154E /* CRUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUtilities.h; sourceTree = SOURCE_ROOT; };
 		4B02D5E519DF27E300E2154E /* CRUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRUtilities.m; sourceTree = SOURCE_ROOT; };
-		4B02D5EA19DF2ACD00E2154E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/AlertConstants.strings; sourceTree = "<group>"; };
+		4B02D5EC19DF2FE600E2154E /* en.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = en.lproj; path = Local/en.lproj; sourceTree = SOURCE_ROOT; };
 		4BA4BA9219D9EDAC0081D29A /* CRCrashReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRCrashReporter.h; path = LoggerFramework/CRCrashReporter.h; sourceTree = SOURCE_ROOT; };
 		4BA4BA9319D9EDAC0081D29A /* CRCrashReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRCrashReporter.m; path = LoggerFramework/CRCrashReporter.m; sourceTree = SOURCE_ROOT; };
 		4BA4BA9619DA06B00081D29A /* CRRemoteReportSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRRemoteReportSender.h; sourceTree = SOURCE_ROOT; };
@@ -115,6 +115,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B02D5ED19DF2FEE00E2154E /* Locale */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Locale;
+			sourceTree = "<group>";
+		};
 		4BCD81B8199BE8CA00CC3F35 = {
 			isa = PBXGroup;
 			children = (
@@ -165,7 +172,8 @@
 		4BCD81C7199BE8CA00CC3F35 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4B02D5EB19DF2ACD00E2154E /* AlertConstants.strings */,
+				4B02D5ED19DF2FEE00E2154E /* Locale */,
+				4B02D5EC19DF2FE600E2154E /* en.lproj */,
 				4BCD8206199BEC6900CC3F35 /* LoggerFramework-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -348,17 +356,6 @@
 			targetProxy = 4BCD822B199C0CF600CC3F35 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		4B02D5EB19DF2ACD00E2154E /* AlertConstants.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4B02D5EA19DF2ACD00E2154E /* en */,
-			);
-			name = AlertConstants.strings;
-			sourceTree = SOURCE_ROOT;
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4BCD81E2199BE8CA00CC3F35 /* Debug */ = {
