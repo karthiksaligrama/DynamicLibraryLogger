@@ -74,6 +74,7 @@
 		4B02D5E419DF27E300E2154E /* CRUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUtilities.h; sourceTree = SOURCE_ROOT; };
 		4B02D5E519DF27E300E2154E /* CRUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRUtilities.m; sourceTree = SOURCE_ROOT; };
 		4B02D5EC19DF2FE600E2154E /* en.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = en.lproj; path = Locale/en.lproj; sourceTree = SOURCE_ROOT; };
+		4B02D5EE19DF388100E2154E /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = SOURCE_ROOT; };
 		4BA4BA9219D9EDAC0081D29A /* CRCrashReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CRCrashReporter.h; path = LoggerFramework/CRCrashReporter.h; sourceTree = SOURCE_ROOT; };
 		4BA4BA9319D9EDAC0081D29A /* CRCrashReporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CRCrashReporter.m; path = LoggerFramework/CRCrashReporter.m; sourceTree = SOURCE_ROOT; };
 		4BA4BA9619DA06B00081D29A /* CRRemoteReportSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRRemoteReportSender.h; sourceTree = SOURCE_ROOT; };
@@ -173,6 +174,7 @@
 		4BCD81C7199BE8CA00CC3F35 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4B02D5EE19DF388100E2154E /* Settings.bundle */,
 				4B02D5ED19DF2FEE00E2154E /* Locale */,
 				4BCD8206199BEC6900CC3F35 /* LoggerFramework-Prefix.pch */,
 			);
