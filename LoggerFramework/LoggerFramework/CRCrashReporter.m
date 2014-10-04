@@ -112,6 +112,9 @@ static CRCrashReporter *sharedObject;
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     if(buttonIndex != [alertView cancelButtonIndex]){
         //TODO: work with the remote report sender class to send the report
+        
+        
+        
     }
 }
 

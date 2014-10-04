@@ -16,4 +16,6 @@
 
 +(void)registerDefaultsFromSettingsBundle;
 
++(NSString *)getDeviceId;
+
 @end

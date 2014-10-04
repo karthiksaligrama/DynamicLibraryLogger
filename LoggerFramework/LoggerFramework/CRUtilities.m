@@ -7,6 +7,7 @@
 //
 
 #import "CRUtilities.h"
+#import <UIKit/UIKit.h>
 
 @implementation CRUtilities
 
@@ -60,6 +61,10 @@
     
     [defs registerDefaults:defaultsToRegister];
     [defs synchronize];
+}
+
++(NSString *)getDeviceId{
+    return [[[UIDevice currentDevice] identifierForVendor] UUIDString];
 }
 
 @end
