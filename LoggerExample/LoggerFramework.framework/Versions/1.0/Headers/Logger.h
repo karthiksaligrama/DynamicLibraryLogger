@@ -1,8 +1,9 @@
 //
 //  Logger.h
+//
 //  LoggerFramework
 //
-//  Created on 8/13/14.
+//  Created by Karthik Saligrama on 8/13/14.
 //
 //
 
@@ -10,5 +11,8 @@
 #define LoggerFramework_Logger_h
 
 #import <LoggerFramework/CRLogger.h>
+#import <LoggerFramework/CRCrashReporter.h>
+#import <LoggerFramework/CRUtilities.h>
+#import <LoggerFramework/CRRemoteReportSender.h>
 
 #endif

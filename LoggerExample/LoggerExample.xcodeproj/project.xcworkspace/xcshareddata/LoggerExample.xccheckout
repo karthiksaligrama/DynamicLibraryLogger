@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>61F4A9F4-EE7A-4311-B6FE-B91CD99D9FF9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LoggerExample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>85F5365FBF83AB925AEFED9216EE6CC6CB6A7B2A</key>
+		<string>https://github.com/karthiksaligrama/DynamicLibraryLogger.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LoggerExample/LoggerExample.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>85F5365FBF83AB925AEFED9216EE6CC6CB6A7B2A</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/karthiksaligrama/DynamicLibraryLogger.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>85F5365FBF83AB925AEFED9216EE6CC6CB6A7B2A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>85F5365FBF83AB925AEFED9216EE6CC6CB6A7B2A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Logger</string>
+		</dict>
+	</array>
+</dict>
+</plist>
