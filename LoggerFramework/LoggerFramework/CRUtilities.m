@@ -50,9 +50,7 @@
                 id objectToSet = [prefSpecification objectForKey:@"DefaultValue"];
                 [defaultsToRegister setObject:objectToSet forKey:key];
                 NSLog(@"Setting object %@ for key %@", objectToSet, key);
-            }
-            else
-            {
+            }else{
                 // already readable: don't touch
                 NSLog(@"Key %@ is readable (value: %@), nothing written to defaults.", key, currentObject);
             }
