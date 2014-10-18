@@ -22,11 +22,11 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		4B02D5E619DF27E300E2154E /* CRUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B02D5E419DF27E300E2154E /* CRUtilities.h */; };
+		4B02D5E619DF27E300E2154E /* CRUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B02D5E419DF27E300E2154E /* CRUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4B02D5E719DF27E300E2154E /* CRUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B02D5E519DF27E300E2154E /* CRUtilities.m */; };
-		4BA4BA9419D9EDAC0081D29A /* CRCrashReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA4BA9219D9EDAC0081D29A /* CRCrashReporter.h */; };
+		4BA4BA9419D9EDAC0081D29A /* CRCrashReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA4BA9219D9EDAC0081D29A /* CRCrashReporter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4BA4BA9519D9EDAC0081D29A /* CRCrashReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA4BA9319D9EDAC0081D29A /* CRCrashReporter.m */; };
-		4BA4BA9819DA06B00081D29A /* CRRemoteReportSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA4BA9619DA06B00081D29A /* CRRemoteReportSender.h */; };
+		4BA4BA9819DA06B00081D29A /* CRRemoteReportSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BA4BA9619DA06B00081D29A /* CRRemoteReportSender.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4BA4BA9919DA06B00081D29A /* CRRemoteReportSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA4BA9719DA06B00081D29A /* CRRemoteReportSender.m */; };
 		4BCD81C5199BE8CA00CC3F35 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BCD81C4199BE8CA00CC3F35 /* Foundation.framework */; };
 		4BCD81D3199BE8CA00CC3F35 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BCD81D2199BE8CA00CC3F35 /* XCTest.framework */; };
@@ -208,9 +208,9 @@
 			files = (
 				4BCD821D199C070700CC3F35 /* Logger.h in Headers */,
 				4BCD821B199C004300CC3F35 /* CRLogger.h in Headers */,
+				4BA4BA9419D9EDAC0081D29A /* CRCrashReporter.h in Headers */,
 				4BA4BA9819DA06B00081D29A /* CRRemoteReportSender.h in Headers */,
 				4B02D5E619DF27E300E2154E /* CRUtilities.h in Headers */,
-				4BA4BA9419D9EDAC0081D29A /* CRCrashReporter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

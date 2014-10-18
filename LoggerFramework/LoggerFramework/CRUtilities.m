@@ -11,6 +11,12 @@
 
 @implementation CRUtilities
 
++(void)crash{
+    NSLog(@"Trigerring a manual crash");
+    CFRelease(NULL);
+}
+
+
 +(NSString *)applicationName{
     return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleDisplayName"];
 }

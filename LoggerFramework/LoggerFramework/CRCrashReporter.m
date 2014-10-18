@@ -44,10 +44,12 @@ static CRCrashReporter *sharedObject;
 -(void)registerCrashReporter{
     NSUserDefaults *userDefaults= [NSUserDefaults standardUserDefaults];
     BOOL enableCrashReporter = [userDefaults boolForKey:@"CRASH_ENABLED"];
+    
     if(!enableCrashReporter){
         NSLog(@"Warning!!! Crash reporter is not enabled. Application will continue to crash");
         return;
     }
+    
     NSSetUncaughtExceptionHandler(&UncaughtExceptionHandler);
     signal(SIGABRT, SignalHandler);
     signal(SIGILL, SignalHandler);
@@ -96,6 +98,7 @@ static CRCrashReporter *sharedObject;
 }
 
 -(void)handleException:(NSException *)exception{
+    NSLog(@"exception handler");
     //save application state
     if(self.delegate && [self.delegate respondsToSelector:@selector(saveApplicationState)]){
         [self.delegate saveApplicationState];
@@ -134,6 +137,7 @@ void UncaughtExceptionHandler(NSException *exception) {
 }
 
 void SignalHandler(int signal){
+    NSLog(@"signal handler %d",signal);
     NSMutableDictionary *userInfo = [NSMutableDictionary dictionaryWithObject:[NSNumber numberWithInt:signal]
                                        forKey:CRSignalKey];
     

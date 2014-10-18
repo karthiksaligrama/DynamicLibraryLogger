@@ -8,7 +8,7 @@
 
 #import "CRAppDelegate.h"
 #import "CRViewController.h"
-#import <LoggerFramework/CRLogger.h>
+#import <LoggerFramework/Logger.h>
 
 @implementation CRAppDelegate
 
@@ -27,6 +27,12 @@
     //register fresh logger;
     [logger clearLog];
     [logger registerLogger];
+    
+    
+    //register crash reporter
+    CRCrashReporter *reporter = [CRCrashReporter sharedInstance];
+    [reporter registerCrashReporter];
+    
     
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
     

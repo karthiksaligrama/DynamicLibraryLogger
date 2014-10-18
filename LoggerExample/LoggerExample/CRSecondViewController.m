@@ -8,6 +8,7 @@
 
 #import "CRSecondViewController.h"
 #import <AVFoundation/AVFoundation.h>
+#import <LoggerFramework/Logger.h>
 
 @interface CRSecondViewController (){
     UIButton *playButton;
@@ -50,7 +51,7 @@
     
     killApp = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [killApp setTitle:@"Kill App" forState:UIControlStateNormal];
-    [killApp addTarget:self action:@selector(die) forControlEvents:UIControlEventTouchUpInside];
+    [killApp addTarget:self action:@selector(dieNow) forControlEvents:UIControlEventTouchUpInside];
     [killApp sizeToFit];
     
     CGRect killFrame = killApp.frame;
@@ -60,7 +61,9 @@
     [self.view addSubview:killApp];
 }
 
-
+-(void)dieNow{
+    [CRUtilities crash];
+}
 
 
 -(void)playAudio:(id)sender{

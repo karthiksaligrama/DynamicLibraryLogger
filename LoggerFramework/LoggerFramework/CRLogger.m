@@ -62,6 +62,8 @@ NSString *filePath;
     if(debugEnabled){
         _dyld_register_func_for_add_image(&imageAdded);
         _dyld_register_func_for_remove_image(&imageRemoved);
+    }else{
+        NSLog(@"Dynamic logger debugging is not enabled");
     }
 }
 
@@ -128,7 +130,6 @@ static void recordImageLoadAndUnload(const struct mach_header *mac_h,bool loaded
     
     return true;
 }
-
 
 //close the fileHandle before the dealloc is called.
 //this way we dont have a file io leak
